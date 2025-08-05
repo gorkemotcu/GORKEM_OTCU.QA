@@ -1,33 +1,39 @@
-Başlık: Test Otomasyonu Projesi
+# Test Otomasyonu Projesi
 
-Giriş
-Bu proje, Insider web sitesi için Python ve Selenium kullanarak geliştirilen bir otomatik test senaryosu uygulamasıdır. Proje, sürdürülebilir ve okunabilir olması için Page Object Model (POM) tasarım deseni kullanılarak oluşturuldu.
+Bu proje, Insider web sitesi için Python ve Selenium kullanılarak geliştirilmiş bir otomatik test senaryosu uygulamasıdır. Projenin sürdürülebilir ve okunabilir olması için **Page Object Model (POM)** tasarım deseni kullanılmıştır.
 
-Test Senaryosu
-Otomasyon aşağıdaki adımları test eder:
+---
 
-Ana Sayfa Kontrolü: https://useinsider.com/ adresine gidilmesi ve sayfanın başarılı bir şekilde açılması.
+### Test Senaryosu
 
-Kariyer Sayfası Navigasyonu: Navigasyon menüsünden "Company" -> "Careers" adımlarıyla kariyer sayfasına gidilmesi ve sayfanın doğru yüklendiğinin doğrulanması.
+Bu otomasyon aşağıdaki adımları test etmektedir:
 
-QA İşleri Filtreleme: İstanbul, Türkiye lokasyonundaki "Quality Assurance" pozisyonlarının filtrelenmesi ve sonuçların listelenmesi.
+1.  **Ana Sayfa Kontrolü:** `https://useinsider.com/` adresine gidilmiş ve sayfanın başarıyla açıldığı doğrulanmıştır.
 
-İş Detaylarını Doğrulama: Listelenen tüm pozisyonların konum ve departman bilgilerinin doğrulanması.
+2.  **Kariyer Sayfasına Navigasyon:** Navigasyon çubuğundaki "Company" menüsü seçilmiş, ardından "Careers" seçeneğine tıklanmıştır. Kariyer sayfasının görüntülendiği ve "Locations", "Teams", "Life at Insider" bloklarının görünür olduğu doğrulanmıştır.
 
-Başvuru Formuna Yönlendirme: Pozisyon detay sayfasındaki "View Role" butonuna tıklanarak başvuru sayfasına başarılı bir şekilde yönlendirildiğinin kontrolü.
+3.  **QA İşlerinin Filtrelenmesi:** İstanbul, Türkiye lokasyonunda "Quality Assurance" pozisyonları filtrelenmiş ve sonuçların listesi elde edilmiştir.
 
-Kurulum ve Çalıştırma
+4.  **İş Detaylarının Doğrulanması:** Listelenen tüm pozisyonların konum ve departman bilgilerinin doğru olduğu kontrol edilmiştir.
 
-Gerekli Kütüphaneler: Proje için gerekli kütüphaneler requirements.txt dosyasından pip install -r requirements.txt komutu ile kurulabilir.
+5.  **Başvuru Formuna Yönlendirme:** "View Role" butonuna tıklandığında kullanıcının Lever Application form sayfasına başarılı bir şekilde yönlendirildiği doğrulanmıştır.
 
-Testleri Çalıştırma: Testleri çalıştırmak için pytest test_insider_automation.py komutu kullanılabilir veya direkt IDE üzerinden run edilebilir. Detaylı bir HTML raporu almak istenirse, pytest test_insider_automation.py --html=test_report.html komutu çalıştırılabilir.
+---
 
-Proje Yapısı ve Ek Özellikler
+### Kurulum ve Çalıştırma
 
-Projeyi Page Object Model (POM) prensiplerine göre yapılandırıldı.
+Gerekli kütüphaneler, `requirements.txt` dosyasından `pip install -r requirements.txt` komutu ile kurulabilir.
 
-Başarısız test durumlarında otomatik olarak ekran görüntüsü alınır.
+**Testlerin Çalıştırılması**
 
-Güvenilir element bulma için Explicit Waits kullanıldı.
+* Tüm testleri çalıştırmak için `pytest test_insider_automation.py` komutu kullanılmıştır.
+* Detaylı bir HTML raporu almak için `pytest test_insider_automation.py --html=test_report.html` komutu çalıştırılmıştır.
 
-WebDriver yönetimi için WebDriver Manager kütüphanesinden faydalanıldı.
+---
+
+### Proje Yapısı ve Ek Özellikler
+
+* **Page Object Model (POM):** Proje, POM prensiplerine göre yapılandırılmıştır.
+* **Hata Yönetimi:** Başarısız test durumlarında otomatik olarak ekran görüntüsü alınması sağlanmıştır.
+* **Explicit Waits:** Güvenilir element bulma için `Explicit Waits` kullanılmıştır.
+* **WebDriver Manager:** WebDriver yönetimini otomatik hale getirmek için `WebDriver Manager` kütüphanesinden faydalanılmıştır.
