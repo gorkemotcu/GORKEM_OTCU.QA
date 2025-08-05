@@ -25,8 +25,8 @@ Manuel testler sırasında tespit edilen ve raporlanan hataların bir özeti aş
 * **BUG-OEP-0002:** Pop-up üzerinde gösterilen ürün fiyatı ve para birimi yanlıştır.
 * **BUG-OEP-0003:** Pop-up kapatma düğmesi doğru çalışmamaktadır.
 * **BUG-OEP-0004:** Pop-up üzerindeki "Add to Cart" butonu çalışmamaktadır.
-* **BUG-OEP-0005:** Pop-up üzerindeki sepet sayacının değeri yanlıştır.
-* **BUG-OEP-0006:** Pop-up'ın responsive tasarımı hatalıdır; mobil görünümlerinde düzgün çalışmamaktadır.
+* **BUG-OEP-0005:** Pop-up üzerindeki cart count (sepet sayacı) değeri yanlıştır.
+* **BUG-OEP-0006:** Pop-up'ın responsive tasarımı hatalıdır; mobil görünümlerde çalışmamaktadır.
 
 ---
 
