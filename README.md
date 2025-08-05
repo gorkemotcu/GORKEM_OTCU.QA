@@ -1,4 +1,4 @@
-# QA Test Raporu
+# QA Task Raporu
 
 Bu proje, gerçekleştirilen manuel ve otomasyon testlerini içermektedir. Bir web uygulamasının çeşitli fonksiyonları test edilmiş, hatalar raporlanmış ve otomasyon testi gerçekleştirilmiştir.
 
